@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio de Kevin">
+    <meta name="author" content="Kevin Ramos">
+    <meta name="keywords" content="Portafolio, Kevin, Ramos">
+    <!-- favicon -->
+    <link rel="icon" href="./img/man-reading.png">
+    <!-- añadir css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Portafolio de Kevn</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/art-navbar.png" alt="logo pagina" width="50" height="50" class="d-inline-block"></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <!-- color blanco el boton -->
+                <i class="bi bi-list text-white icon-nav"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu de navegación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                    <!-- hacer que todos los links cierren el offcanvas al pulsarlos -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Seccion hero -->
+    <section class="hero align-items-stretch">
+        <div class="container hero-container">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f57a052225385.590964f2b2df2.gif" class="img-fluid container-img" alt="Foto de Kevin" >
+            </div>
+            <h1 id="text-name" class="rounded">Hola, soy Kevin Ramos Rivas</h1>
+            <h2 class="rounded">Desarrollador y futuro Ingeniero de Software</h2>
+
+    </section>
+    <!-- Seccion sobre mi -->
+    <section class="aboutme" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-start">SOBRE MI</h2>
+            </div>
+            <div class="aboutme-text row">
+                <div class="col-md-6 aboutme-col-description d-flex justify-content-center align-items-center">
+                    <p>
+                        Soy un estudiante de ingeniería de software en mi último año de carrera en la UNMSM. Mi pasión es aprender y mi interés principal es el desarrollo web. Creo que la tecnología es una herramienta poderosa para mejorar la calidad de vida de las personas y estoy empeñado en contribuir a ello. En mi tiempo libre disfruto del anime, la cultura japonesa y los videojuegos, lo que me permite relajarme y desconectar de la rutina diaria.
+                    </p>
+                </div>
+                <div class="col-md-6  aboutme-col-sanmarcos d-flex align-items-center justify-content-center">
+                    <img src="./img/man-reading.png" alt="logo san marcos" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion experiencia -->
+    <section class="experience d-flex" id="experience">
+        <h2>EXPERIENCIA</h2>
+        <div class="container">
+            <div class="row card-container-experience">
+                <div class="col-12 col-md-4 d-flex card-experience rounded">
+                    <h3>Desarrollo</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/465/465274.png" alt="icono desarrollo" width="50" height="50" class="d-inline-block icon-experience">
+                    <p>Tengo experiencia en el desarrollo con estas tegnologias y lenguajes de programación, siempre estoy dispuesto a seguir aprendiendo algo nuevo para seguir mejorando</p>
+                    <!-- lista de tegnologias -->
+                    <div class="badges-contenedor container">
+                        <span class="badge rounded-pill bg-black">HTML, CSS, JavaScript</span>
+                        <span class="badge rounded-pill bg-black">Bootstrap</span>
+                        <span class="badge rounded-pill bg-black">PHP</span>
+                        <span class="badge rounded-pill bg-black">MySQL</span>
+                        <span class="badge rounded-pill bg-black">Python</span>
+                        <span class="badge rounded-pill bg-black">Java</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4  d-flex card-experience rounded">
+                    <h3>Estudiante</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/408/408159.png" alt="icono estudiante" width="50" height="50" class="d-inline-block  icon-experience">
+                    <p>Estoy cursando la carrera de Ingeniería de Software en la Universidad Nacional Mayor de San Marcos, actualmente me encuentro en el 9no ciclo</p>
+                    <div class="badges-contenedor">
+                        <span class="badge rounded-pill bg-black">UNMSM</span>
+                        <span class="badge rounded-pill bg-black">Ingeniería de Software</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4  d-flex card-experience rounded">
+                    <h3>Soporte de TI</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/465/465270.png" alt="icono soporte" width="50" height="50" class="d-inline-block  icon-experience">
+                    <p>Actualmente trabajo en el area de Estadistica e Informatica de la Fcaultad de Ingeniería de Sistemas e Informatica de la UNMSM</p>
+                    <div class="badges-contenedor">
+                        <span class="badge rounded-pill bg-black">Soporte de TI</span>
+                        <span class="badge rounded-pill bg-black">Mantenimiento de equipos</span>
+                        <span class="badge rounded-pill bg-black">Instalación de software</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion proyectos -->
+    <section class="projects proyectos-recientes" id="projects">
+        <h2>MIS PROYECTOS</h2>
+        <p> Aqui hay algunos de mis proyectos recientes</p>
+        <!-- galeria de proyectos -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+              <!-- Proyecto 1 -->
+              <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="proyecto">
+                  <img src="./img/proyecto-1.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Sistema de control de inventario</p>
+                    <span class="badge rounded-pill">Java</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="./img/proyecto-2.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Comparador mejor precio componente PC</p>
+                    <span class="badge rounded-pill">Web Scraping</span>
+                    <span class="badge rounded-pill">Python</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="./img/proyecto-3.jpg" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>App para conocer más de la UNMSM</p>
+                    <span class="badge rounded-pill">Android</span>
+                    <span class="badge rounded-pill">Java</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 4 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="./img/proyecto-4.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>TicTacToe usando algoritmo Minimax</p>
+                    <span class="badge rounded-pill">Minimax</span>
+                    <span class="badge rounded-pill">Java</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 5 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="./img/proyecto-5.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Maquetación pagina venta de vuelos</p>
+                    <span class="badge rounded-pill">HTML</span>
+                    <span class="badge rounded-pill">CSS</span>
+                    <span class="badge rounded-pill">Bootstrap</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 6 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="./img/proyecto-6.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Plataforma educativa(asistencias, notas y observaciones)</p>
+                    <span class="badge rounded-pill">PHP</span>
+                    <span class="badge rounded-pill">MySQL</span>
+                    <span class="badge rounded-pill">Bootstrap</span>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- agregamos un boton de ver mas proyectos -->
+        <div class="container text-center">
+          <a href=" " class="btn button-more">Ver más proyectos<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

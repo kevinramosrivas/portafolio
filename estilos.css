@@ -32,6 +32,9 @@ html {
 
 .nav-link:hover {
     color: #fff;
+    animation: rebote 1s infinite;
+    background-color: var(--bs-indigo);
+    border-radius: 10px;
 }
 section{
     display: flex;
@@ -137,6 +140,11 @@ h1{
    
 }
 
+.text-start{
+    animation: rebote 1s infinite;
+    font-size: 3rem;
+}
+
 .aboutme-col-sanmarcos img{
     max-width: 300px;
     padding: 1rem;
@@ -184,6 +192,7 @@ h1{
     line-height: 1.5;
     margin-bottom: 2rem;
     font-family: 'VT323', monospace;
+    animation: rebote 1s infinite;
 }
 .card-experience{
     padding: 1rem;
@@ -205,8 +214,8 @@ h1{
     color: #6E07F3;
     margin: 1rem;
 }
-.icon-experience:hover{
-    animation: giro 1s infinite;
+.card-experience:hover .icon-experience{
+    animation: giro 1s 1;
 }
 @keyframes giro{
     0%{
@@ -256,7 +265,8 @@ h1{
 .proyectos-recientes {
     padding: 2rem;
     padding-top: calc(2rem + 70px);
-    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /* background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-color: var(--bs-indigo);
     font-family: 'VT323', monospace;
     display: flex;
     flex-direction: column;
@@ -271,12 +281,28 @@ h1{
     line-height: 1.5;
     margin-bottom: 2rem;
     font-family: 'VT323', monospace;
+    color: #fff;
+    animation: rebote 1s infinite;
+}
+
+
+@keyframes rebote{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .proyectos-recientes p{
     font-size: 1.4rem;
     font-weight: 100;
     text-align: justify;
     line-height: 1.5;
+    color: #fff;
 }
   
 .proyectos-recientes img {
@@ -303,7 +329,7 @@ h1{
 }
 
 .overlay p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 0;
     text-align: center;
@@ -362,13 +388,13 @@ h1{
     margin: 10px;
 }
 .overlay .badge {
-    background-color: #6E07F3;
+    background-color: var(--bs-dark);
     color: white;
     font-weight: 200;
 }
 
 .button-more {
-    background-color: #6E07F3;
+    background-color: var(--bs-dark);
     color: white;
     font-weight: 200;
     padding: 1.2rem;
@@ -381,7 +407,7 @@ h1{
     animation: mover_derecha 1.2s infinite;
 }
 .button-more:hover{
-    background-color: var(--bs-dark);
+    background-color: #a86bf8;
     color: white;
 
 }
@@ -406,9 +432,6 @@ h1{
     .proyectos-recientes{
         padding: 1rem;
     }
-    .proyectos-recientes h2{
-        font-size: 2rem;
-    }
     .proyectos-recientes p{
         font-size: 1rem;
     }
@@ -419,4 +442,185 @@ h1{
     .overlay i{
         font-size: 1.5rem;
     }
+}
+
+/* seccion ccontacto */
+
+.contact {
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-email-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -2rem;
+    background-color: var(--bs-dark);
+    color: white;
+}
+
+.contact-item h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.5;
+}
+.contact-item p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+.contact-item a button{
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 1rem;
+    color: white;
+    background-color: #6E07F3;
+}
+
+.contact-item a button:hover{
+    background-color: #a86bf8;
+    color: white;
+}
+
+.contact-item a button:hover img{
+    animation : rebotar 1s infinite;
+}
+
+@keyframes rebotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+.container-coin-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -2rem;
+    color: white;
+}
+.container-icons-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-icons-contact  .icons-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-item {
+    margin: 1rem;
+    color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+.contact-info-item .bi {
+    border-radius: 50%;
+    padding: 0.8rem;
+    background-color: var(--bs-dark);
+    color: white;
+}
+.contact-info-item:hover{
+    animation: shake 1s infinite;
+}
+.contact-info-item:hover .bi-linkedin{
+    background-color: #0077B5;
+    color: white;
+}
+.contact-info-item:hover .bi-github{
+    background-color: #24292E;
+    color: white;
+}
+.contact-info-item:hover .bi-twitter{
+    background-color: #1DA1F2;
+    color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .contact-item h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .contact-item p {
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 1rem;
+    }
+    
+    .contact-item a button{
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-align: justify;
+        line-height: 1.5;
+        padding: 1rem;
+        color: white;
+        background-color: #6E07F3;
+    }
+    .container-social {
+        margin-top: 1rem;
+    }
+}
+.footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bs-dark);
+    color: white;
+}
+.footer-author {
+    font-size: 1.2rem;
+    font-weight: 50;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+.footer-reserved {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
 }
